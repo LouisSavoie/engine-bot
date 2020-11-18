@@ -1,0 +1,22 @@
+{
+  "name": "engine-bot",
+  "version": "1.0.0",
+  "description": "This is my first Discord bot, named after one of my online personas.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LouisSavoie/engine-bot.git"
+  },
+  "author": "Louis Savoie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LouisSavoie/engine-bot/issues"
+  },
+  "homepage": "https://github.com/LouisSavoie/engine-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
+}
