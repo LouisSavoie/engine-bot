@@ -3,12 +3,6 @@ const client = new Discord.Client();
 const config = require('./config.json');
 const fs = require('fs');
 
-// ATTACHMENTS
-
-// MEMES ATTACHMENTS (from memes/)
-const dockenDance = new Discord.MessageAttachment("memes/dockenDance.gif");
-const bestGuildEver = new Discord.MessageAttachment("memes/bestGuildEver.jpg");
-
 // CREATE COMMANDS COLLECTION
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -27,7 +21,7 @@ client.on('message', msg => {
     }
     
     const args = msg.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
+    const command = args.shift();
 
      if(command === 'help'){
          client.commands.get('help').execute(msg, args);
